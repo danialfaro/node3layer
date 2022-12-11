@@ -13,6 +13,10 @@ app.set( "view engine", "ejs" );
 app.use(routes)
 app.use("/api", apiRoutes)
 
+app.get('/', (req, res) => {
+    res.sendStatus(200)
+})
+
 // start the Express server
 app.listen( port, () => {
     console.log( `server started at http://localhost:${ port }` );
