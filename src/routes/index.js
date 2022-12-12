@@ -30,7 +30,7 @@ routes.get( "/data", ( req, res ) => {
             my: "234143"
         }
     ]
-    res.render("index", {
+    res.render("data", {
         data: data
     });
 });

@@ -14,7 +14,7 @@ app.use(routes)
 app.use("/api", apiRoutes)
 
 app.get('/', (req, res) => {
-    res.sendStatus(200)
+    res.render("index");
 })
 
 // start the Express server
