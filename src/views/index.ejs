@@ -3,9 +3,40 @@
 <head>
     <%- include('./partials/head.partial.ejs', {title: 'Hello'}) %>
 </head>
+<style>
+
+    div {
+        width:  400px;
+        height: 400px;
+        position: relative;
+    }
+
+    div span, div img {
+        position: absolute;
+    }
+
+    div img {
+        width: 100%;
+    }
+
+    div span {
+        text-align: center;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 5rem;
+        color: white;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+</style>
 <body>
     
-    <img src="https://i.pinimg.com/originals/44/0d/53/440d53a5e13cba11064dc7e2fa01b64c.gif" alt="">
+    <div>
+        <img src="https://i.pinimg.com/originals/44/0d/53/440d53a5e13cba11064dc7e2fa01b64c.gif" alt="">
+        <span>ola</span>
+    </div>   
 
 </body>
 </html>
