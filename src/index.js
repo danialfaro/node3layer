@@ -1,7 +1,7 @@
 const express = require( "express" );
 const path = require("path")
 const app = express();
-const port = 3001; // default port to listen
+const port = 3000; // default port to listen
 
 const routes = require("./routes")
 const apiRoutes = require("./api")

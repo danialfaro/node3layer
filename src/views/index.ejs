@@ -13,24 +13,15 @@
     }
 
     #container {
-        width: 400px;
-        height: 400px;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
         padding: 12px;
     }
 
-    #ola, #ola img {
-        width: 100%;
-        height: 100%;
-    }
-
-    button {
+    a.button {
         border: none;
-        padding: 8px 18px;
+        color: black;
+        text-decoration: none;
+        background-color: whitesmoke;
+        padding: 12px 18px;
         font-weight: bold;
         font-family: sans-serif;
         border-radius: 10px;
@@ -41,20 +32,11 @@
 <body>
 
     <div id="container">
-        <div id="ola" class="d-none">
-            <img src="https://i.pinimg.com/originals/44/0d/53/440d53a5e13cba11064dc7e2fa01b64c.gif" alt="">
-        </div>
-        <button id="container-button" onclick="olaClicked()">
-            ola
-        </button>
+        <a href="/notes" class="button">
+            Ir a notas
+        </a>
     </div>
 
-    <script>
-        const olaClicked = () => {
-            document.getElementById("container-button").classList.add("d-none")
-            document.getElementById("ola").classList.remove("d-none")
-        }
-    </script>
 </body>
 
 </html>

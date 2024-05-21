@@ -19,20 +19,4 @@ routes.get( "/notes/:author", ( req, res ) => {
     });
 });
 
-routes.get( "/data", ( req, res ) => {
-    const data = [
-        {
-            random: "1214114",
-            data: "234314"
-        },
-        {
-            wow: "134124",
-            my: "234143"
-        }
-    ]
-    res.render("data", {
-        data: data
-    });
-});
-
 module.exports = routes;
